@@ -1,7 +1,17 @@
+import os
+from time import sleep
+def screen_clear():
+   if os.name == 'posix':
+      _ = os.system('clear')
+   else:
+      _ = os.system('cls')
+sleep(1)
+screen_clear()
+
 x=int(input("Enter Lower Limit:"))
 y=int(input("Enter Upper Limit:"))
 
-print("\n")
+screen_clear()
 
 items = []
 for i in range(x, y+1):
