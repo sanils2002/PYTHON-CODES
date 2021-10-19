@@ -1,3 +1,13 @@
+import os
+from time import sleep
+def screen_clear():
+   if os.name == 'posix':
+      _ = os.system('clear')
+   else:
+      _ = os.system('cls')
+sleep(1)
+screen_clear()
+
 def string_both_ends(str):
   if len(str) < 2:
     return ''
@@ -8,7 +18,7 @@ s1=input("Enter String 1:")
 s2=input("Enter String 2:")
 s3=input("Enter String 3:")
 
-print("\n")
+screen_clear()
 
 print(string_both_ends(s1))
 print(string_both_ends(s2))
