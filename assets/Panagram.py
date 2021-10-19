@@ -9,6 +9,9 @@ def ispangram(str):
     return True
       
 string = input("Enter String:")
+
+print("\n")
+
 if(ispangram(string) == True):
     print("Yes")
 else:
