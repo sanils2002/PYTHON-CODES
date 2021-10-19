@@ -1,3 +1,13 @@
+import os
+from time import sleep
+def screen_clear():
+   if os.name == 'posix':
+      _ = os.system('clear')
+   else:
+      _ = os.system('cls')
+sleep(1)
+screen_clear()
+
 import string
   
 def ispangram(str):
@@ -10,7 +20,7 @@ def ispangram(str):
       
 string = input("Enter String:")
 
-print("\n")
+screen_clear()
 
 if(ispangram(string) == True):
     print("Yes")
