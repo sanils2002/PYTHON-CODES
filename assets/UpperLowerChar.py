@@ -13,3 +13,5 @@ def string_test(s):
 
 string=input("Enter String:")
 string_test(string)
+
+print("\n")
