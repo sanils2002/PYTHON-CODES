@@ -11,13 +11,13 @@ def anagram(s):
             string_dict[ch] = string_dict[ch] + 1
     return string_dict
 
-s1 = "master"
-s2 = "stream"
+s1 = input("Enter String 1:")
+s2 = input("Enter String 2:")
 
 a = anagram(s1)
 b = anagram(s2)
 
 if a == b:
-    print "Anagram"
+    print("Anagram")
 else:
-    print "Not Anagram"
+    print("Not Anagram")
