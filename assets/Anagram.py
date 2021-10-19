@@ -1,3 +1,13 @@
+import os
+from time import sleep
+def screen_clear():
+   if os.name == 'posix':
+      _ = os.system('clear')
+   else:
+      _ = os.system('cls')
+sleep(1)
+screen_clear()
+
 def anagram(s):
     string_list = []
     for ch in s.lower():
@@ -14,7 +24,7 @@ def anagram(s):
 s1 = input("Enter String 1:")
 s2 = input("Enter String 2:")
 
-print("\n")
+screen_clear()
 
 a = anagram(s1)
 b = anagram(s2)
