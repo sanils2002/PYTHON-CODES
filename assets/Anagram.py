@@ -14,6 +14,8 @@ def anagram(s):
 s1 = input("Enter String 1:")
 s2 = input("Enter String 2:")
 
+print("\n")
+
 a = anagram(s1)
 b = anagram(s2)
 
