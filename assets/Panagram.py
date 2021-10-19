@@ -8,7 +8,7 @@ def ispangram(str):
   
     return True
       
-string = 'the quick brown fox jumps over the lazy dog'
+string = input("Enter String:")
 if(ispangram(string) == True):
     print("Yes")
 else:
