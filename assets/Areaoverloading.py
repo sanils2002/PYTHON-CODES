@@ -1,5 +1,5 @@
-#Write a program to calculate area of square and rectangle. Use method overloading for this, that is, define a method area() which can take one parameter or two
-#parameter. If area is called with one parameter, then it will calculate area of square and with two parameters then it will calculate area of rectangle.
+# Write a program to calculate area of square and rectangle. Use method overloading for this, that is, define a method area() which can take one parameter or two
+# parameter. If area is called with one parameter, then it will calculate area of square and with two parameters then it will calculate area of rectangle.
 
 import os
 from time import sleep
