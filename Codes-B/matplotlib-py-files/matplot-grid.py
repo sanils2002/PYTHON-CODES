@@ -1,0 +1,45 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Use the grid() function to add grid lines to the plot.
+x = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])
+y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
+
+plt.title("Sports Watch Data")
+plt.xlabel("Average Pulse")
+plt.ylabel("Calories Burnt")
+
+plt.plot(x, y)
+plt.grid()
+plt.show()
+
+# Use the axis parameter in the grid() function to specify which grid lines to display
+x = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])
+y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
+
+plt.title("Sports Watch Data")
+plt.xlabel("Average Pulse")
+plt.ylabel("Calories Burnt")
+
+plt.plot(x, y)
+plt.grid(axis = 'x')
+plt.show()
+
+# Display only grid lines for the y-axis:
+plt.plot(x, y)
+plt.grid(axis = 'y')
+plt.show()
+
+# Set the line properties of the grid: 
+# grid(color = 'color', linestyle = 'linestyle', linewidth = number)
+
+x = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])
+y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
+
+plt.title("Sports Watch Data")
+plt.xlabel("Average Pulse")
+plt.ylabel("Calorie Burnage")
+
+plt.plot(x, y)
+plt.grid(color = 'green', linestyle = '--', linewidth = 0.5)
+plt.show()
